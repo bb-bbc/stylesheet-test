@@ -1,0 +1,494 @@
+:host {
+  --root-text-color: #000000;
+  --root-font-size: 15px;
+  --root-line-height: 1.6;
+  
+  --primary: #4fc2e6;
+  --secondary: #88a0af;
+  
+  --form-field-bgcolor: #ffffff;
+  --form-field-border: #9A9C9B;
+  --form-field-border--active: #2196f3;
+  --form-valid: #42bc34;
+  --form-invalid: #dc3545;
+  
+  --form-btn-primary-text: #000;
+  --form-btn-primary-bgcolor: var(--primary);
+  --form-btn-primary-hover: #26b4e0;
+  --form-btn-primary-active: #26b4e0;
+  
+  --form-btn-secondary-text: #4fc2e6;
+  --form-btn-secondary-bgcolor: inherit;
+  --form-btn-secondary-hover: rgba(79,194,230,.1);
+  --form-btn-secondary-active: rgba(79,194,230,.1);
+  
+  --form-btn-disabled: #657783;
+  
+  --card-bgcolor: #fff;
+  --card-title-color: #696969;
+  --card-header-bgcolor: #6c757d;
+  
+  --box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%),
+              -6px -6px 20px 0 rgb(255 255 255 / 75%), 
+              6px 6px 20px 0 rgb(11 11 11 / 5%);
+              
+  --progress-pledged: #1b88b0;
+  --progress-received: #000;
+
+  --root-font-face: canada-type-gibson, 
+                  "Helvetica Neue",
+                  Helvetica,
+                  Roboto,
+                  Arial,
+                  sans-serif;
+}
+
+:host {
+
+  --card-textColor: #000000;
+  --card-borderRadius: 12px;
+  --card-boxShadow: 0 2px 4px 0 rgb(0 0 0 / 5%),
+                    -6px -6px 20px 0 rgb(255 255 255 / 75%),
+                    6px 6px 20px 0 rgb(11 11 11 / 5%);
+                    
+  --card-primaryColor: #4a95ec;
+  --card-badgeBgColor: var(--card-textColor);
+  --card-headerBgColor: #666;
+  
+  --card-badgeStatusActiveColor: var(--card-primaryColor);
+  --card-badgeStatusPendingColor: #f0d030;
+  --card-badgeStatusDiscontinuedColor: #ededed;
+  --card-badgeStatusCompleteColor: #77be43;
+  
+  --card-fontSize: 16px;
+  --card-fontSizeHeader: 18px;
+  --card-lineHeight: 1.6;
+  
+  --card-progressBarColor: #1b88b0;
+  --card-progressBarActiveColor: linear-gradient(90deg, #1b88b0 0%, #1fb5ac 100%);
+  --card-progressBarRemainingColor: #efefef;
+  --card-progressBarCompleteColor: #77be43;
+  
+  --card-imageBgColor: #657783;
+  --card-checkboxDefaultColor: #657783;
+  --card-labelBgColor: #efefef;
+  
+}
+
+:host {
+
+  --form-field-color: #000000;
+  --form-field-fontFamily: var(--root-font-face);
+  --form-field-margin: 8px;
+  --form-field-borderradius: 0;
+  --form-field-padding: 20px 13px;
+  --form-field-bgcolor: #ffffff;
+  --form-field-bgcolor--active: #ffffff;
+  --form-field-border: #9A9C9B;
+  --form-field-border--active: #9A9C9B;
+  
+  --form-field-boxshadow--active: 0 2px 4px 0 rgb(0 0 0 / 5%),
+                                  -6px -6px 20px 0 rgb(255 255 255 / 75%),
+                                  6px 6px 20px 0 rgb(11 11 11 / 5%);
+                                  
+  --form-field-boxshadow--valid: 0 0 0 0.2rem rgba(40, 167, 69, .25);
+  --form-field-boxshadow--invalid: 0 0 0 0.2rem rgba(220, 53, 69, .25);
+  
+  --form-valid: #28a745;
+  --form-invalid: #dc3545;
+  
+  --form-field-disabled: #ebebe4;
+  
+}
+
+:host {
+
+  --innerPage-bgColor: inherit;
+  --innerPage-textColor: #000000;
+  --innerPage-fontSize: 17px;
+  --innerPage-lineHeight: 1.6;
+  --innerPage-primaryColor: #4fc2e6;
+  --innerPage-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+  --innerPage-borderRadius: 4px;
+  
+  --innerPage-h1fontSize: inherit;
+  --innerPage-h1lineHeight: inherit;
+  
+  --innerPage-h2fontSize: inherit;
+  --innerPage-h2lineHeight: inherit;
+  
+  --innerPage-h3fontSize: inherit;
+  --innerPage-h3lineHeight: inherit;
+  --innerPage-h3color: #000000;
+  
+  --innerPage-h4fontSize: inherit;
+  --innerPage-h4lineHeight: inherit;
+  
+  --innerPage-dateTimeFontSize: 28px;
+  
+  --innerPage-buttonBgColor: var(--innerPage-primaryColor);
+  --innerPage-buttonHoverBgColor: var(--form-btn-primary-hover);
+  --innerPage-buttonActiveBgColor: var(--form-btn-primary-bgcolor);
+  
+  --innerPage-progressBarColor: var(--card-progressBarColor);
+  --innerPage-progressBarActiveColor: var(--card-progressBarActiveColor);
+  --innerPage-progressBarRemainingColor: var(--card-progressBarRemainingColor);
+  --innerPage-progressBarCompleteColor: var(--card-progressBarCompleteColor);
+  
+  --innerPage-labelBgColor: #ffffff;
+  
+  --innerPage-linkColor: #1b96bb;
+  --innerPage-linkHoverColor: #1781a1; 
+  --innerPage-linkActiveColor: #1781a1;
+  
+  --innerPage-imageBgColor: #657783;
+  --innerPage-mapBgColor: #efefef;
+  
+}
+
+:host {
+  --component-bgColor: #657783; 
+}
+
+.mppw-component-container {
+  font-family: var(--root-font-face);
+  color: var(--root-text-color);
+  line-height: initial;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--root-font-face); 
+}
+
+.mpp-innerpage h1,
+.mpp-innerpage h2, 
+h1,
+h2 {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.mpp-innerpage h3,
+h3,
+h3.mpp-card--title {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.mpp-innerpage h4,
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;  
+}
+
+h4.mpp-card--subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+@media print, screen and (min-width: 43.75em) {
+
+  .mpp-innerpage h1,
+  .mpp-innerpage h2,
+  h1,
+  h2 {
+    font-size: 30px;
+  }
+  
+  .mpp-innerpage h3, 
+  h3,
+  h3.mpp-card--title {
+    font-size: 22px;
+  }
+  
+  .mpp-innerpage h4,
+  h4 {
+    font-size: 20px;
+  }
+
+  h4.mpp-card--subtitle {
+    font-size: 17px;
+  }
+
+}
+
+@media print, screen and (min-width: 60em) {
+
+  .mpp-innerpage h1,
+  .mpp-innerpage h2,
+  h1,
+  h2 {
+    font-size: 36px;
+  }
+
+  .mpp-innerpage h3,
+  h3,
+  h3.mpp-card--title { 
+    font-size: 24px;
+  }
+
+  .mpp-innerpage h4,
+  h4 {
+    font-size: 22px;
+  }
+
+  h4.mpp-card--subtitle {
+    font-size: 18px;
+  }
+
+}
+
+.mppw-component-container h1#pageTitle {
+  display: none;
+}
+
+.mppw-component-container .mppw-form-wrapper h1:not(#customFormTitle) {
+  display: none;
+}
+
+.mppw-btn {
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.mppw-btn:hover,
+.mppw-btn:active,
+.mppw-btn:focus {
+  color: #000; 
+}
+
+.mppw-btn.secondary {
+  border: 0;
+  box-shadow: inset 0 0 0 3px #4fc2e6;
+}
+
+.mppw-btn.secondary:hover,
+.mppw-btn.secondary:active, 
+.mppw-btn.secondary:focus {
+  color: #26b4e0;
+  box-shadow: inset 0 0 0 3px #26b4e0;
+  background-color: rgba(79,194,230,.1);
+}
+
+.mppw-form-field__label {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: inherit!important;
+}
+
+.mppw-form-field__control:not([value=""]) + .mppw-form-field__label,
+.mppw-form-field__control:focus + .mppw-form-field__label {
+  color: #000;
+}
+
+.mppw-form-field-alt {
+  padding: 0;
+  border: none; 
+}
+
+.mppw-form-field-alt .mppw-form-field__control {
+  border: 1px solid #9a9c9b;
+}
+
+.mppw-form-field__alt-label {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: inherit!important;
+  margin-bottom: 10px;
+}
+
+.mpp-card {
+  border-radius: 12px; 
+}
+
+.mpp-card .mpp-card--title {
+  max-height: none;
+  margin-bottom: 5px;
+}
+
+.mpp-card .mpp-card--description {
+  max-height: none;
+}
+
+.mpp-innerpage--back a {
+  text-decoration: underline;
+}
+
+#opportunityRespondDiv input[type=submit].mppw-btn.primary {
+  max-width: none!important;
+}
+
+.mpp-innerpage ul.mpp-innerpage--contacts {
+  margin-top: 5px;
+}
+
+.mppw-component-container.mppw-login {
+  border-top: 5px solid #4fc2e6;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+              -6px -6px 20px 0 rgba(255,255,255,.75),
+              6px 6px 20px 0 rgba(11,11,11,.05);
+  padding: 10px 0;
+  border-radius: 12px;
+}
+
+.mppw-component-container.mppw-login #loginButton.mppw-loggedout--username {
+  padding: 12px 20px;
+  color: #000;
+  text-decoration: underline;
+  font-weight: 500;
+  position: relative;
+  display: block; 
+}
+
+.mppw-component-container.mppw-login #loginButton.mppw-loggedout--username:hover {
+  background-color: #f8a435;
+}
+
+.mppw-component-container.mppw-login #loginButton.mppw-loggedout--username:hover::after {
+  content: "\e91b";
+  font-family: icomoon!important;
+  speak: none;
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.06667rem;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.mppw-component-container.mppw-login #loginButton.mppw-loggedout--username .mppw-icon-unlock {
+  display: none;
+}
+
+.mppw-component-container.mppw-login #userNameContainer {
+  display: none!important; 
+}
+
+.mppw-component-container.mppw-login #userMenu {
+  display: block!important;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  box-shadow: none;
+  border: 0;
+  margin-top: 0;
+  padding: 0;
+  float: none;
+  border-radius: 0;
+}
+
+.mppw-component-container.mppw-login #userMenu #securedMenuItems .mppw-login--list#securedMenuItemList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mppw-component-container.mppw-login #userMenu #securedMenuItems .mppw-login--list#securedMenuItemList li {
+  width: 100%;
+}
+
+.mppw-component-container.mppw-login #userMenu #securedMenuItems .mppw-login--list#securedMenuItemList li a {
+  padding: 14px 20px;
+  color: #000;
+  text-decoration: underline;
+  font-weight: 500;
+  position: relative; 
+}
+
+.mppw-component-container.mppw-login #userMenu #securedMenuItems .mppw-login--list#securedMenuItemList li a:hover {
+  background-color: #f8a435;
+}
+
+.mppw-component-container.mppw-login #userMenu #securedMenuItems .mppw-login--list#securedMenuItemList li a:hover::after {
+  content: "\e91b";
+  font-family: icomoon!important;
+  speak: none;
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.06667rem;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+}
+
+.mppw-component-container.mppw-login #userMenu #securedMenuItems .mppw-login--list#securedMenuItemList li:first-child {
+  order: 20; 
+}
+
+.mpp-household h1 {
+  display: none;
+}
+
+.mpp-household .mpp-household--header-container {
+  padding-bottom: 25px;
+}
+
+.mpp-household .mpp-household--header-container .mpp-household--header#householdName {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mppw-component-container.mpp-subscriptions .mpp-subscriptions--header h1 {
+  display: none;
+}
+
+.mppw-component-container.mpp-subscriptions #subscriptionsBody .mpp-card-multiselect {
+  background-color: #fff;
+  border: 0;
+  padding: 15px 20px; 
+}
+
+.mppw-component-container.mpp-subscriptions #subscriptionsBody .mpp-card-multiselect img {
+  display: none;
+}
+
+.mppw-component-container.mpp-subscriptions #subscriptionsBody .mpp-card-multiselect h3.mpp-card-multiselect--title {
+  font-size: 17px;
+}
+
+#group-finder-container .mpp-card {
+  border-top: 8px solid #0e2441;
+}
+
+#group-finder-container .mpp-card .mpp-card--header {
+  display: none!important;
+}
+
+#group-finder-container .mpp-card .mpp-card--body {
+  text-align: center;
+}
+
+#group-finder-container .mpp-card .mpp-card--body .mpp-card--description {
+  display: none;
+}
+
+#group-finder-container .mpp-card .mpp-card--footer {
+  text-align: center;
+}
+
+#group-finder-container .mpp-card .mpp-card--footer .mppw-btn.primary {
+  background: inherit;
+  border: 3px solid #4fc2e6;
+  color: #4fc2e6;
+}
